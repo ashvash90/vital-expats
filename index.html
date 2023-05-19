@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>The Home of Vital Expats</title>
+</head>
+
+<body>
+
+  <header id="menu" class="mega-nav mega-nav--mobile mega-nav--desktop@md position-relative js-mega-nav">
+    <div class="mega-nav__container">
+      <!-- 👇 logo -->
+      <a href="#0" class="mega-nav__logo">
+        <img src="/main/assets/img/vital-expats-logo.svg" alt="Vital Expats Logo">
+      </a>
+
+      <!-- 👇 icon buttons --mobile -->
+      <div class="mega-nav__icon-btns mega-nav__icon-btns--mobile">
+        <button class="reset mega-nav__icon-btn mega-nav__icon-btn--menu js-tab-focus" aria-label="Toggle menu"
+          aria-controls="mega-nav-navigation">
+          <svg class="icon" viewBox="0 0 24 24">
+            <g class="icon__group" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10"
+              stroke-width="2">
+              <path d="M1 6h22" />
+              <path d="M1 12h22" />
+              <path d="M1 18h22" />
+            </g>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mega-nav__nav js-mega-nav__nav" id="mega-nav-navigation" role="navigation" aria-label="Main">
+        <div class="mega-nav__nav-inner">
+          <ul class="mega-nav__items">
+            <li class="mega-nav__label">Menu</li>
+
+            <!-- 👇 layout 1 -> tabbed content -->
+            <li class="mega-nav__item js-mega-nav__item">
+              <button class="reset mega-nav__control js-mega-nav__control js-tab-focus">
+                Products
+                <i class="mega-nav__arrow-icon" aria-hidden="true">
+                  <svg class="icon" viewBox="0 0 16 16">
+                    <g class="icon__group" fill="none" stroke="currentColor" stroke-linecap="square"
+                      stroke-miterlimit="10" stroke-width="2">
+                      <path d="M2 2l12 12" />
+                      <path d="M14 2L2 14" />
+                    </g>
+                  </svg>
+                </i>
+              </button>
+
+              <div class="mega-nav__sub-nav-wrapper">
+                <div class="mega-nav__sub-nav mega-nav__sub-nav--layout-1">
+                  <!-- 👇 links - visible on mobile -->
+                  <ul class="mega-nav__sub-items">
+                    <li class="mega-nav__sub-item">
+                      <a href="#0" class="mega-nav__sub-link">
+                        <span class="flex items-center gap-xs">
+                          <img class="block width-lg height-lg radius-50% object-cover"
+                            src="../../../app/assets/img/mega-site-nav-img-1.jpg" alt="Image description">
+                          <i>Product One</i>
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="mega-nav__sub-item">
+                      <a href="#0" class="mega-nav__sub-link">
+                        <span class="flex items-center gap-xs">
+                          <img class="block width-lg height-lg radius-50% object-cover"
+                            src="../../../app/assets/img/mega-site-nav-img-2.jpg" alt="Image description">
+                          <i>Product Two</i>
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="mega-nav__sub-item">
+                      <a href="#0" class="mega-nav__sub-link">
+                        <span class="flex items-center gap-xs">
+                          <img class="block width-lg height-lg radius-50% object-cover"
+                            src="../../../app/assets/img/mega-site-nav-img-3.jpg" alt="Image description">
+                          <i>Product Three</i>
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <!-- 👇 tabs - visible on desktop -->
+                  <div class="mega-nav__tabs grid gap-lg js-tabs" data-tabs-layout="vertical">
+                    <ul class="col-4 mega-nav__tabs-controls js-tabs__controls" aria-label="Select a product">
+                      <li>
+                        <a href="#tabProduct1" class="mega-nav__tabs-control js-tab-focus" aria-selected="true">
+                          <span class="flex items-center gap-xs">
+                            <img class="block width-lg height-lg radius-50% object-cover"
+                              src="../../../app/assets/img/mega-site-nav-img-1.jpg" alt="Image description">
+
+                            <i class="margin-right-xxxs">Product One</i>
+
+                            <svg class="icon icon--xs margin-left-auto" viewBox="0 0 16 16" aria-hidden="true">
+                              <path d="M5,2l6,6L5,14" fill="none" stroke="currentColor" stroke-linecap="square"
+                                stroke-miterlimit="10" stroke-width="1" />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#tabProduct2" class="mega-nav__tabs-control js-tab-focus" aria-selected="true">
+                          <span class="flex items-center gap-xs">
+                            <img class="block width-lg height-lg radius-50% object-cover"
+                              src="../../../app/assets/img/mega-site-nav-img-2.jpg" alt="Image description">
+
+                            <i class="margin-right-xxxs">Product Two</i>
+
+                            <svg class="icon icon--xs margin-left-auto" viewBox="0 0 16 16" aria-hidden="true">
+                              <path d="M5,2l6,6L5,14" fill="none" stroke="currentColor" stroke-linecap="square"
+                                stroke-miterlimit="10" stroke-width="1" />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#tabProduct3" class="mega-nav__tabs-control js-tab-focus" aria-selected="true">
+                          <span class="flex items-center gap-xs">
+                            <img class="block width-lg height-lg radius-50% object-cover"
+                              src="../../../app/assets/img/mega-site-nav-img-3.jpg" alt="Image description">
+
+                            <i class="margin-right-xxxs">Product Three</i>
+
+                            <svg class="icon icon--xs margin-left-auto" viewBox="0 0 16 16" aria-hidden="true">
+                              <path d="M5,2l6,6L5,14" fill="none" stroke="currentColor" stroke-linecap="square"
+                                stroke-miterlimit="10" stroke-width="1" />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+
+                    <div class="col-8 js-tabs__panels">
+                      <section id="tabProduct1" class="mega-nav__tabs-panel js-tabs__panel">
+                        <a href="#0" class="mega-nav__tabs-img margin-bottom-md">
+                          <img class="block width-100%" src="../../../app/assets/img/mega-site-nav-img-1.jpg"
+                            alt="Image description">
+                        </a>
+
+                        <div class="text-component">
+                          <h1 class="text-xl">Product One</h1>
+                          <p class="color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Amet, quaerat.</p>
+                          <p class="flex gap-xxs">
+                            <a href="#0" class="btn btn--subtle">Learn More</a>
+                            <a href="#0" class="btn btn--primary">Buy</a>
+                          </p>
+                        </div>
+                      </section>
+
+                      <section id="tabProduct2" class="mega-nav__tabs-panel js-tabs__panel">
+                        <a href="#0" class="mega-nav__tabs-img margin-bottom-md">
+                          <img class="block width-100%" src="../../../app/assets/img/mega-site-nav-img-2.jpg"
+                            alt="Image description">
+                        </a>
+
+                        <div class="text-component">
+                          <h1 class="text-xl">Product Two</h1>
+                          <p class="color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Amet, quaerat.</p>
+                          <p class="flex gap-xxs">
+                            <a href="#0" class="btn btn--subtle">Learn More</a>
+                            <a href="#0" class="btn btn--primary">Buy</a>
+                          </p>
+                        </div>
+                      </section>
+
+                      <section id="tabProduct3" class="mega-nav__tabs-panel js-tabs__panel">
+                        <a href="#0" class="mega-nav__tabs-img margin-bottom-md">
+                          <img class="block width-100%" src="../../../app/assets/img/mega-site-nav-img-3.jpg"
+                            alt="Image description">
+                        </a>
+
+                        <div class="text-component">
+                          <h1 class="text-xl">Product Three</h1>
+                          <p class="color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Amet, quaerat.</p>
+                          <p class="flex gap-xxs">
+                            <a href="#0" class="btn btn--subtle">Learn More</a>
+                            <a href="#0" class="btn btn--primary">Buy</a>
+                          </p>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- 👇 layout 2 -> multiple lists -->
+            <li class="mega-nav__item js-mega-nav__item">
+              <button class="reset mega-nav__control js-mega-nav__control js-tab-focus">
+                Lists
+                <i class="mega-nav__arrow-icon" aria-hidden="true">
+                  <svg class="icon" viewBox="0 0 16 16">
+                    <g class="icon__group" fill="none" stroke="currentColor" stroke-linecap="square"
+                      stroke-miterlimit="10" stroke-width="2">
+                      <path d="M2 2l12 12" />
+                      <path d="M14 2L2 14" />
+                    </g>
+                  </svg>
+                </i>
+              </button>
+
+              <div class="mega-nav__sub-nav-wrapper">
+                <div class="mega-nav__sub-nav mega-nav__sub-nav--layout-2">
+                  <ul class="mega-nav__sub-items">
+                    <li class="mega-nav__label">Clothing</li>
+                    <li class="mega-nav__sub-item"><a href="#0" class="mega-nav__sub-link">All Clothing</a></li>
+                    <li class="mega-nav__sub-item"><a href="#0" class="mega-nav__sub-link">Coats</a></li>
+                    <li class="mega-nav__sub-item"><a href="#0" class="mega-nav__sub-link">Dresses</a></li>
+                    <li class="mega-nav__sub-item"><a href="#0" class="mega-nav__sub-link">Jackets</a></li>
+                    <li class="mega-nav__sub-item"><a href="#0" class="mega-nav__sub-link">Jeans</a></li>
+                  </ul>
+
+                  <ul class="mega-nav__sub-items">
+                    <li class="mega-nav__label">Shoes</li>
+                    <li class="mega-nav__sub-item"><a href="#0" class="mega-nav__sub-link">All Shoes</a></li>
+                    <li class="mega-nav__sub-item"><a href="#0" class="mega-nav__sub-link">Trainers</a></li>
+                    <li class="mega-nav__sub-item"><a href="#0" class="mega-nav__sub-link">Heels</a></li>
+                    <li class="mega-nav__sub-item"><a href="#0" class="mega-nav__sub-link">Boots</a></li>
+                    <li class="mega-nav__sub-item"><a href="#0" class="mega-nav__sub-link">Ankle Boots</a></li>
+                  </ul>
+
+                  <ul class="mega-nav__sub-items">
+                    <li class="mega-nav__label">Sports</li>
+                    <li class="mega-nav__sub-item"><a href="#0" class="mega-nav__sub-link">All Sports</a></li>
+                    <li class="mega-nav__sub-item"><a href="#0" class="mega-nav__sub-link">Basketball</a></li>
+                    <li class="mega-nav__sub-item"><a href="#0" class="mega-nav__sub-link">Fitness</a></li>
+                    <li class="mega-nav__sub-item"><a href="#0" class="mega-nav__sub-link">Football</a></li>
+                    <li class="mega-nav__sub-item"><a href="#0" class="mega-nav__sub-link">Golf</a></li>
+                    <li class="mega-nav__sub-item"><a href="#0" class="mega-nav__sub-link">Running</a></li>
+                    <li class="mega-nav__sub-item"><a href="#0" class="mega-nav__sub-link">Swimming</a></li>
+                  </ul>
+
+                  <ul class="mega-nav__sub-items">
+                    <li class="mega-nav__label">Accessories</li>
+                    <li class="mega-nav__sub-item"><a href="#0" class="mega-nav__sub-link">All Accessories</a></li>
+                    <li class="mega-nav__sub-item"><a href="#0" class="mega-nav__sub-link">Bags</a></li>
+                    <li class="mega-nav__sub-item"><a href="#0" class="mega-nav__sub-link">Jewellery</a></li>
+                    <li class="mega-nav__sub-item"><a href="#0" class="mega-nav__sub-link">Watches</a></li>
+                    <li class="mega-nav__sub-item"><a href="#0" class="mega-nav__sub-link">Scarves</a></li>
+                  </ul>
+
+                  <div class="mega-nav__card width-100% max-width-xs margin-x-auto">
+                    <a href="#0" class="block radius-lg overflow-hidden">
+                      <figure class="aspect-ratio-4:3">
+                        <img class="block width-100%" src="../../../app/assets/img/mega-site-nav-img-1.jpg"
+                          alt="Image description">
+                      </figure>
+                    </a>
+
+                    <div class="margin-top-sm">
+                      <h3 class="text-base"><a href="#0" class="mega-nav__card-title">Browse all →</a></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- 👇 layout 3 -> gallery -->
+            <li class="mega-nav__item js-mega-nav__item">
+              <button class="reset mega-nav__control js-mega-nav__control js-tab-focus">
+                Gallery
+                <i class="mega-nav__arrow-icon" aria-hidden="true">
+                  <svg class="icon" viewBox="0 0 16 16">
+                    <g class="icon__group" fill="none" stroke="currentColor" stroke-linecap="square"
+                      stroke-miterlimit="10" stroke-width="2">
+                      <path d="M2 2l12 12" />
+                      <path d="M14 2L2 14" />
+                    </g>
+                  </svg>
+                </i>
+              </button>
+
+              <div class="mega-nav__sub-nav-wrapper">
+                <div class="mega-nav__sub-nav mega-nav__sub-nav--layout-3">
+                  <div class="mega-nav__card">
+                    <a href="#0" class="block radius-lg overflow-hidden">
+                      <figure class="aspect-ratio-4:3">
+                        <img class="block width-100%" src="../../../app/assets/img/mega-site-nav-img-4.jpg"
+                          alt="Image description">
+                      </figure>
+                    </a>
+
+                    <div class="margin-top-sm">
+                      <h3 class="text-base"><a href="#0" class="mega-nav__card-title">Clothing</a></h3>
+                    </div>
+                  </div>
+
+                  <div class="mega-nav__card">
+                    <a href="#0" class="block radius-lg overflow-hidden">
+                      <figure class="aspect-ratio-4:3">
+                        <img class="block width-100%" src="../../../app/assets/img/mega-site-nav-img-5.jpg"
+                          alt="Image description">
+                      </figure>
+                    </a>
+
+                    <div class="margin-top-sm">
+                      <h3 class="text-base"><a href="#0" class="mega-nav__card-title">Shoes</a></h3>
+                    </div>
+                  </div>
+
+                  <div class="mega-nav__card">
+                    <a href="#0" class="block radius-lg overflow-hidden">
+                      <figure class="aspect-ratio-4:3">
+                        <img class="block width-100%" src="../../../app/assets/img/mega-site-nav-img-6.jpg"
+                          alt="Image description">
+                      </figure>
+                    </a>
+
+                    <div class="margin-top-sm">
+                      <h3 class="text-base"><a href="#0" class="mega-nav__card-title">Home</a></h3>
+                    </div>
+                  </div>
+
+                  <div class="mega-nav__card">
+                    <a href="#0" class="block radius-lg overflow-hidden">
+                      <figure class="aspect-ratio-4:3">
+                        <img class="block width-100%" src="../../../app/assets/img/mega-site-nav-img-7.jpg"
+                          alt="Image description">
+                      </figure>
+                    </a>
+
+                    <div class="margin-top-sm">
+                      <h3 class="text-base"><a href="#0" class="mega-nav__card-title">Accessories</a></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- 👇 layout 4 -> single list -->
+            <li class="mega-nav__item js-mega-nav__item">
+              <button class="reset mega-nav__control js-mega-nav__control js-tab-focus">
+                Support
+                <i class="mega-nav__arrow-icon" aria-hidden="true">
+                  <svg class="icon" viewBox="0 0 16 16">
+                    <g class="icon__group" fill="none" stroke="currentColor" stroke-linecap="square"
+                      stroke-miterlimit="10" stroke-width="2">
+                      <path d="M2 2l12 12" />
+                      <path d="M14 2L2 14" />
+                    </g>
+                  </svg>
+                </i>
+              </button>
+
+              <div class="mega-nav__sub-nav-wrapper">
+                <div class="mega-nav__sub-nav mega-nav__sub-nav--layout-4">
+                  <ul class="mega-nav__sub-items">
+                    <li class="mega-nav__label">Help &amp; Support</li>
+                    <li class="mega-nav__sub-item"><a href="#0" class="mega-nav__sub-link">Documentation</a></li>
+                    <li class="mega-nav__sub-item"><a href="#0" class="mega-nav__sub-link">Questions &amp; Answers</a>
+                    </li>
+                    <li class="mega-nav__sub-item"><a href="#0" class="mega-nav__sub-link">Contact us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="mega-nav__label">Other</li>
+
+            <!-- 👇 link -->
+            <li class="mega-nav__item">
+              <a href="#0" class="mega-nav__control">Link</a>
+            </li>
+          </ul>
+
+
+        </div>
+      </div>
+
+
+    </div>
+  </header>
+
+  <section id="opening-section" class="padding-y-xl padding-bottom-300 bg-secondary-95 position-relative" id="header"
+    style="background-image: linear-gradient(to bottom, var(--color-primary-95), var(--color-accent-95), var(--color-secondary-95));
+  background-size: cover;">
+    <div class="container">
+      <h1 class="text-xxxl@md text-xxl text-gradient--ocean font-semibold text-shadow-sm text-center">Lorem ipsum dolor
+        sit amet <span class="border-bottom-accent border-5">adipisicing</span> elit...</h1>
+      <div class="width-768">
+        <p class="line-height-body text-md margin-top-md text-center">Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Aspernatur quaerat, fugiat accusantium dolores similique obcaecati distinctio, aperiam illum autem vel
+          tempora rerum debitis. Ducimus ab harum placeat corporis sunt ratione!</p>
+        <div class="flex gap-md justify-center margin-top-md">
+          <a href="#offers" class="btn btn--accent">See the offers</a>
+          <a href="#signup-section" class="btn btn--dashed" style="box-shadow: none;">Sign Up Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="featured-offers" class="padding-y-xl z-index-2 position-relative margin-minus-250">
+    <div class="adaptive-container">
+
+      <div class="padding-lg bg-white radius-lg shadow-md">
+        <div class="flex items-center" style="justify-content: space-between;">
+          <div class="flex items-center gap-x-sm">
+          <img
+            src="https://vcblog-images.b-cdn.net/spai/q_lossless+w_48+to_webp+ret_img/https://blog.vitalconsular.com/wp-content/uploads/2021/05/icon-popular.svg"
+            alt="popular icon" class="icon icon--md">
+          <h2>Featured Offers</h2>
+        </div>
+          <a href="/offers" class="justify-end font-semibold font-secondary">See All Offers 🡒</a>
+        </div>
+
+
+        <div class="grid gap-md margin-top-md">
+
+          <div class="col-4@md radius">
+            <a href="#0" class="card-v6" aria-label="Link description">
+              <figure>
+                <img class="block width-100% radius--top object-cover" style="max-height: 225px;"
+                  src="/main/assets/img/will.jpg" alt="Image description">
+              </figure>
+
+              <div class="padding-md shadow-md radius--bottom">
+                <div class="text-xs color-primary-40 font-semibold letter-spacing-md text-uppercase margin-bottom-xxxs">
+                  Bespoke Wills</div>
+                <h3 class="font-secondary text-base">A Bespoke Will to Suit your Expat Needs</h3>
+              </div>
+
+              <div class="card-v6__icon-wrapper radius--top-right" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 16 16">
+                  <g fill="currentColor">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" d="M1 8h14"></path>
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" d="M15 8l-5 5"></path>
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" d="M10 3l5 5"></path>
+                  </g>
+                </svg>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-4@md radius">
+            <a href="#0" class="card-v6" aria-label="Link description">
+              <figure>
+                <img class="block width-100% radius--top object-cover" style="max-height: 225px;"
+                  src="/main/assets/img/life-insurance.jpg" alt="Image description">
+              </figure>
+
+              <div class="padding-md shadow-md radius--bottom">
+                <div
+                  class="text-xs color-secondary-40 font-semibold letter-spacing-md text-uppercase margin-bottom-xxxs">
+                  Life Insurance</div>
+                <h3 class="font-secondary text-base">Because you never know what's around the corner</h3>
+              </div>
+
+              <div class="card-v6__icon-wrapper radius--top-right" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 16 16">
+                  <g fill="currentColor">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" d="M1 8h14"></path>
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" d="M15 8l-5 5"></path>
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" d="M10 3l5 5"></path>
+                  </g>
+                </svg>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-4@md radius">
+            <a href="#0" class="card-v6" aria-label="Link description">
+              <figure>
+                <img class="block width-100% radius--top object-cover" style="max-height: 225px;"
+                  src="/main/assets/img/will.jpg" alt="Image description">
+              </figure>
+
+              <div class="padding-md shadow-md radius--bottom">
+                <div
+                  class="text-xs color-tertiary-30 font-semibold letter-spacing-md text-uppercase margin-bottom-xxxs">
+                  Mystery Thing</div>
+                <h3 class="font-secondary text-base">A Third Mystery Thing That Nobody Knows</h3>
+              </div>
+
+              <div class="card-v6__icon-wrapper radius--top-right" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 16 16">
+                  <g fill="currentColor">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" d="M1 8h14"></path>
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" d="M15 8l-5 5"></path>
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" d="M10 3l5 5"></path>
+                  </g>
+                </svg>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about us" class="padding-y-xl">
+    <div class="adaptive-container">
+      <h2 class="text-xxl">What is <span class="text-gradient--ocean text-shadow-xs border-bottom-accent">Vital Expats?</span></h2>
+    </div>
+
+  </section>
+
+
+  <section id="expat-resources" class="padding-y-xl bg-primary-95" style="background-image: linear-gradient(to bottom, var(--color-primary-95), var(--color-accent-95), var(--color-secondary-95));">
+    <div class="adaptive-container">
+    <h2 class="text-xxl">Blogs/Guides Can Go Here</h2>
+
+    <div class="grid gap-lg margin-top-md">
+
+      <div class="col-4@md radius">
+        <a href="#0" class="card-v6" aria-label="Link description">
+          <figure>
+            <img class="block width-100% radius--top object-cover" style="max-height: 225px;"
+              src="/main/assets/img/will.jpg" alt="Image description">
+          </figure>
+
+          <div class="padding-md shadow-md radius--bottom">
+            <div class="text-xs color-primary-40 font-semibold letter-spacing-md text-uppercase margin-bottom-xxxs">
+              Bespoke Wills</div>
+            <h3 class="font-secondary text-base">A Bespoke Will to Suit your Expat Needs</h3>
+          </div>
+
+          <div class="card-v6__icon-wrapper radius--top-right" aria-hidden="true">
+            <svg class="icon" viewBox="0 0 16 16">
+              <g fill="currentColor">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M1 8h14"></path>
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 8l-5 5"></path>
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M10 3l5 5"></path>
+              </g>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-4@md radius">
+        <a href="#0" class="card-v6" aria-label="Link description">
+          <figure>
+            <img class="block width-100% radius--top object-cover" style="max-height: 225px;"
+              src="/main/assets/img/life-insurance.jpg" alt="Image description">
+          </figure>
+
+          <div class="padding-md shadow-md radius--bottom">
+            <div class="text-xs color-secondary-40 font-semibold letter-spacing-md text-uppercase margin-bottom-xxxs">
+              Life Insurance</div>
+            <h3 class="font-secondary text-base">Because you never know what's around the corner</h3>
+          </div>
+
+          <div class="card-v6__icon-wrapper radius--top-right" aria-hidden="true">
+            <svg class="icon" viewBox="0 0 16 16">
+              <g fill="currentColor">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M1 8h14"></path>
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 8l-5 5"></path>
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M10 3l5 5"></path>
+              </g>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-4@md radius">
+        <a href="#0" class="card-v6" aria-label="Link description">
+          <figure>
+            <img class="block width-100% radius--top object-cover" style="max-height: 225px;"
+              src="/main/assets/img/will.jpg" alt="Image description">
+          </figure>
+
+          <div class="padding-md shadow-md radius--bottom">
+            <div class="text-xs color-tertiary-30 font-semibold letter-spacing-md text-uppercase margin-bottom-xxxs">
+              Mystery Thing</div>
+            <h3 class="font-secondary text-base">A Third Mystery Thing That Nobody Knows</h3>
+          </div>
+
+          <div class="card-v6__icon-wrapper radius--top-right" aria-hidden="true">
+            <svg class="icon" viewBox="0 0 16 16">
+              <g fill="currentColor">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M1 8h14"></path>
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 8l-5 5"></path>
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M10 3l5 5"></path>
+              </g>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+  <section class="padding-y-xl" id="signup-section">
+    <div class="adaptive-container">
+      <div class="grid gap-lg">
+
+        <div class="col-6@md flex flex-column gap-y-sm">
+          <h2 class="text-xxl">Sign Up For Even More <span class="border-bottom-accent border-3">Amazing</span>
+            Offers...
+          </h2>
+
+          <p class="line-height-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis ea repellat
+            aperiam similique magni
+            suscipit, rem quae ex exercitationem voluptatem. Temporibus, nihil quae voluptates, iusto tenetur aperiam,
+            neque suscipit minus odio ad quidem modi. Facilis commodi culpa saepe quidem, labore iure repudiandae quasi
+            hic voluptas?</p>
+          <p class="line-height-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis ea repellat
+            aperiam similique magni
+            suscipit, rem quae ex exercitationem voluptatem. Temporibus, nihil quae voluptates, iusto tenetur aperiam,
+            neque suscipit minus odio ad quidem modi. Facilis commodi culpa saepe quidem, labore iure repudiandae quasi
+            hic voluptas?</p>
+        </div>
+
+        <div class="col-6@md radius padding-md bg-white border border-contrast-50">
+          <form class="kwes-form flex flex-column"
+            action="https://kwesforms.com/api/foreign/forms/XC9PtTSPTaFFFzXF4mv8">
+
+            <div class="grid gap-sm">
+
+              <div class="col-6@md flex flex-column gap-y-xxs margin-bottom-sm">
+                <label for="first_name">First Name*</label>
+                <input type="text" name="first_name" rules="required|max:255">
+              </div>
+
+              <div class="col-6@md flex flex-column gap-y-xxs margin-bottom-sm">
+                <label for="email">Email*</label>
+                <input type="email" name="email" rules="required|email">
+              </div>
+
+            </div>
+
+
+            <div class="flex flex-column gap-y-xxs margin-bottom-sm">
+              <label for="uk">Are you based in the UK?*</label>
+              <select name="uk" rules="required">
+                <option selected disabled>Please Select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+
+            <div class="flex flex-column gap-y-xxs margin-bottom-sm" kw-show="fields.uk === 'Yes'">
+              <label for="uk_based">Are you leaving any assets in the UK?*</label>
+              <select name="uk_based" rules="">
+                <option selected disabled>Please Select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+
+            <div class="flex flex-column gap-y-xxs margin-bottom-sm">
+              <label for="travel_type">Are you moving alone, or with a partner/children?*</label>
+              <select name="travel_type" rules="required">
+                <option selected disabled>Please Select</option>
+                <option value="Alone">I'm moving alone</option>
+                <option value="With Partner">I'm moving with my partner</option>
+                <option value="With Children">I'm moving with my children</option>
+                <option value="With Partner & Children">I'm moving with my partner and children</option>
+              </select>
+            </div>
+
+            <div class="flex flex-column gap-y-xxs margin-bottom-sm">
+              <label for="length_of_stay">Are you planning to stay long term or short term?*</label>
+              <select name="length_of_stay" rules="required">
+                <option selected disabled>Please Select</option>
+                <option value="Short Term">Short Term (1-2 Years)</option>
+                <option value="Long Term">Long Term (2 Years+)</option>
+              </select>
+            </div>
+
+            <div class="grid gap-sm">
+
+              <div class="col-6@md flex flex-column gap-y-xxs margin-bottom-sm">
+                <label for="mover_type">Are you moving for the first time or are you a serial nomad?*</label>
+                <select name="mover_type" rules="required">
+                  <option selected disabled>Please Select</option>
+                  <option value="First Time Mover">First Time Mover</option>
+                  <option value="Nomad">Nomad</option>
+                </select>
+              </div>
+
+              <div class="col-6@md flex flex-column gap-y-xxs margin-bottom-sm">
+                <label for="industry">Which industry will you be working in?*</label>
+                <select name="industry" rules="required">
+                  <option selected disabled>Please Select</option>
+                  <option value="First Time Mover">First Time Mover</option>
+                  <option value="Nomad">Nomad</option>
+                </select>
+              </div>
+
+            </div>
+
+            <div class="flex justify-center">
+              <button type="submit" class="btn btn--accent inline-block">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+  <script src="assets/js/scripts.js"></script>
+  <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+
+
+  <style>
+    .kwes-form label {
+      font-size: var(--text-sm) !important;
+      font-family: var(--font-secondary);
+    }
+  </style>
+</body>
+
+</html>
