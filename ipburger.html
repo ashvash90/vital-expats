@@ -8,7 +8,7 @@
     document.getElementsByTagName("html")[0].className += " js";
   </script>
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/fonts-min.css"/>
+  <link rel="stylesheet" href="assets/css/fonts-min.css" />
   <title>IPBurger</title>
 </head>
 
@@ -450,7 +450,7 @@
   <section id="opening-section" class="padding-y-xl position-relative" id="header">
     <div class="adaptive-container">
       <div class="grid gap-lg">
-        <div class="col-7@md">
+        <div class="col-6@md">
           <h1 class="text-xxl@md text-xl font-semibold text-shadow-sm">
             Lorem ipsum dolor sit amet
             <span class="border-bottom-accent border-5">adipisicing</span>
@@ -465,33 +465,45 @@
           <div class="margin-top-md">
             <div class="grid gap-md">
 
-              <div class="col-6@md flex flex-column items-center gap-y-xxs">
+              <div class="col-6@md flex flex-column items-center">
                 <p class="text-uppercase font-semibold letter-spacing-md color-secondary-40">
                   Recurring
                 </p>
-                <p class="text-uppercase color-white font-secondary text-center text-lg bg-secondary-40 font-semibold padding-sm">
-                  Vital10
-                </p>
+
+                <div class="flex position-relative" style="max-height: 160px;">
+                  <img src="./assets/img/ticket-green.svg" alt="ticket green ipburger" class="block width-100%">
+                  <p
+                    class="text-uppercase letter-spacing-md color-white font-secondary text-center text-xl font-semibold position-absolute left-50% top-50%"
+                    style="transform: translate(-50%, -50%);">
+                    Vital10
+                  </p>
+                </div>
+
               </div>
 
-              <div class="col-6@md flex flex-column items-center gap-y-xxs">
+              <div class="col-6@md flex flex-column items-center">
                 <p class="text-uppercase font-semibold letter-spacing-md color-tertiary-40">
                   One-Off
                 </p>
-                <p class="text-uppercase color-white font-secondary text-center text-lg bg-tertiary-40 font-semibold padding-sm">
-                  Vital20
-                </p>
+                <div class="flex position-relative" style="max-height: 160px;">
+                  <img src="./assets/img/ticket-yellow.svg" alt="ticket yellow ipburger" class="block width-100%">
+                  <p
+                    class="text-uppercase letter-spacing-md color-white font-secondary text-center text-xl font-semibold position-absolute left-50% top-50%"
+                    style="transform: translate(-50%, -50%);">
+                    Vital25
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="flex gap-md margin-top-md">
-            <a href="#offers" class="btn btn--accent">See the offers</a>
+          <div class="flex flex-center gap-md margin-top-md">
+            <a href="#offers" class="btn btn--accent">Get this offer</a>
           </div>
         </div>
 
-        <div class="col-5@md">
-          <img src="./assets/img/ip-burger-offer-image.jpg" alt="ipburger offer image" />
+        <div class="col-6@md">
+          <img src="./assets/img/ipburger-vpn-hero-image.svg" alt="ipburger offer image" />
         </div>
       </div>
     </div>
@@ -516,31 +528,31 @@
         <div class="grid gap-xl">
           <div class="col-3@md flex flex-column items-center gap-y-sm">
             <img src="./assets/img/ipburger-benefit-1.webp" alt="ipburger benefit 1" style="height: 175px;" />
-            <p class="text-sm text-center line-height-body">
+            <p class="text-center line-height-body">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
               illo architecto magnam asperiores fugit itaque. Quam modi
               laborum omnis distinctio.
             </p>
           </div>
-            <div class="col-3@md flex flex-column items-center gap-y-sm">
+          <div class="col-3@md flex flex-column items-center gap-y-sm">
             <img src="./assets/img/ipburger-benefit-2.webp" alt="ipburger benefit 2" style="height: 175px;" />
-            <p class="text-sm text-center line-height-body">
+            <p class="text-center line-height-body">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
               illo architecto magnam asperiores fugit itaque. Quam modi
               laborum omnis distinctio.
             </p>
           </div>
-            <div class="col-3@md flex flex-column items-center gap-y-sm">
+          <div class="col-3@md flex flex-column items-center gap-y-sm">
             <img src="./assets/img/ipburger-benefit-3.webp" alt="ipburger benefit 3" style="height: 175px;" />
-            <p class="text-sm text-center line-height-body">
+            <p class="text-center line-height-body">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
               illo architecto magnam asperiores fugit itaque. Quam modi
               laborum omnis distinctio.
             </p>
           </div>
-            <div class="col-3@md flex flex-column items-center gap-y-sm">
+          <div class="col-3@md flex flex-column items-center gap-y-sm">
             <img src="./assets/img/ipburger-benefit-4.webp" alt="ipburger benefit 4" style="height: 175px;" />
-            <p class="text-sm text-center line-height-body">
+            <p class="text-center line-height-body">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
               illo architecto magnam asperiores fugit itaque. Quam modi
               laborum omnis distinctio.
@@ -551,97 +563,98 @@
     </div>
   </section>
 
-  <section id="expat-resources" class="padding-y-xl bg-primary-95" style="background-image: linear-gradient(to bottom, var(--color-primary-95), var(--color-accent-95), var(--color-secondary-95));">
+  <section id="expat-resources" class="padding-y-xl bg-primary-95"
+    style="background-image: linear-gradient(to bottom, var(--color-primary-95), var(--color-accent-95), var(--color-secondary-95));">
     <div class="adaptive-container">
-    <h2 class="text-xxl">Blogs/Guides Can Go Here</h2>
+      <h2 class="text-xxl">Blogs/Guides Can Go Here</h2>
 
-    <div class="grid gap-lg margin-top-md">
+      <div class="grid gap-lg margin-top-md">
 
-      <div class="col-4@md radius">
-        <a href="#0" class="card-v6" aria-label="Link description">
-          <figure>
-            <img class="block width-100% radius--top object-cover" style="max-height: 225px;"
-              src="./assets/img/will.jpg" alt="Image description">
-          </figure>
+        <div class="col-4@md radius">
+          <a href="#0" class="card-v6" aria-label="Link description">
+            <figure>
+              <img class="block width-100% radius--top object-cover" style="max-height: 225px;"
+                src="./assets/img/will.jpg" alt="Image description">
+            </figure>
 
-          <div class="padding-md shadow-md radius--bottom">
-            <div class="text-xs color-primary-40 font-semibold letter-spacing-md text-uppercase margin-bottom-xxxs">
-              Bespoke Wills</div>
-            <h3 class="font-secondary text-base">A Bespoke Will to Suit your Expat Needs</h3>
-          </div>
+            <div class="padding-md shadow-md radius--bottom">
+              <div class="text-xs color-primary-40 font-semibold letter-spacing-md text-uppercase margin-bottom-xxxs">
+                Bespoke Wills</div>
+              <h3 class="font-secondary text-base">A Bespoke Will to Suit your Expat Needs</h3>
+            </div>
 
-          <div class="card-v6__icon-wrapper radius--top-right" aria-hidden="true">
-            <svg class="icon" viewBox="0 0 16 16">
-              <g fill="currentColor">
-                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M1 8h14"></path>
-                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M15 8l-5 5"></path>
-                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M10 3l5 5"></path>
-              </g>
-            </svg>
-          </div>
-        </a>
+            <div class="card-v6__icon-wrapper radius--top-right" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 16 16">
+                <g fill="currentColor">
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" d="M1 8h14"></path>
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" d="M15 8l-5 5"></path>
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" d="M10 3l5 5"></path>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-4@md radius">
+          <a href="#0" class="card-v6" aria-label="Link description">
+            <figure>
+              <img class="block width-100% radius--top object-cover" style="max-height: 225px;"
+                src="./assets/img/life-insurance.jpg" alt="Image description">
+            </figure>
+
+            <div class="padding-md shadow-md radius--bottom">
+              <div class="text-xs color-secondary-40 font-semibold letter-spacing-md text-uppercase margin-bottom-xxxs">
+                Life Insurance</div>
+              <h3 class="font-secondary text-base">Because you never know what's around the corner</h3>
+            </div>
+
+            <div class="card-v6__icon-wrapper radius--top-right" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 16 16">
+                <g fill="currentColor">
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" d="M1 8h14"></path>
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" d="M15 8l-5 5"></path>
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" d="M10 3l5 5"></path>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-4@md radius">
+          <a href="#0" class="card-v6" aria-label="Link description">
+            <figure>
+              <img class="block width-100% radius--top object-cover" style="max-height: 225px;"
+                src="./assets/img/will.jpg" alt="Image description">
+            </figure>
+
+            <div class="padding-md shadow-md radius--bottom">
+              <div class="text-xs color-tertiary-30 font-semibold letter-spacing-md text-uppercase margin-bottom-xxxs">
+                Mystery Thing</div>
+              <h3 class="font-secondary text-base">A Third Mystery Thing That Nobody Knows</h3>
+            </div>
+
+            <div class="card-v6__icon-wrapper radius--top-right" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 16 16">
+                <g fill="currentColor">
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" d="M1 8h14"></path>
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" d="M15 8l-5 5"></path>
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" d="M10 3l5 5"></path>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </div>
+
       </div>
-
-      <div class="col-4@md radius">
-        <a href="#0" class="card-v6" aria-label="Link description">
-          <figure>
-            <img class="block width-100% radius--top object-cover" style="max-height: 225px;"
-              src="./assets/img/life-insurance.jpg" alt="Image description">
-          </figure>
-
-          <div class="padding-md shadow-md radius--bottom">
-            <div class="text-xs color-secondary-40 font-semibold letter-spacing-md text-uppercase margin-bottom-xxxs">
-              Life Insurance</div>
-            <h3 class="font-secondary text-base">Because you never know what's around the corner</h3>
-          </div>
-
-          <div class="card-v6__icon-wrapper radius--top-right" aria-hidden="true">
-            <svg class="icon" viewBox="0 0 16 16">
-              <g fill="currentColor">
-                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M1 8h14"></path>
-                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M15 8l-5 5"></path>
-                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M10 3l5 5"></path>
-              </g>
-            </svg>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-4@md radius">
-        <a href="#0" class="card-v6" aria-label="Link description">
-          <figure>
-            <img class="block width-100% radius--top object-cover" style="max-height: 225px;"
-              src="./assets/img/will.jpg" alt="Image description">
-          </figure>
-
-          <div class="padding-md shadow-md radius--bottom">
-            <div class="text-xs color-tertiary-30 font-semibold letter-spacing-md text-uppercase margin-bottom-xxxs">
-              Mystery Thing</div>
-            <h3 class="font-secondary text-base">A Third Mystery Thing That Nobody Knows</h3>
-          </div>
-
-          <div class="card-v6__icon-wrapper radius--top-right" aria-hidden="true">
-            <svg class="icon" viewBox="0 0 16 16">
-              <g fill="currentColor">
-                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M1 8h14"></path>
-                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M15 8l-5 5"></path>
-                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M10 3l5 5"></path>
-              </g>
-            </svg>
-          </div>
-        </a>
-      </div>
-
-    </div>
 
   </section>
 
@@ -846,17 +859,19 @@
     </div>
   </section>
 
-  <section id="featured-offers" class="padding-y-xl  bg" style="background-image: linear-gradient(to bottom, var(--color-primary-95), var(--color-accent-95), var(--color-secondary-95));">
+  <section id="featured-offers" class="padding-y-xl  bg"
+    style="background-image: linear-gradient(to bottom, var(--color-primary-95), var(--color-accent-95), var(--color-secondary-95));">
     <div class="adaptive-container">
 
-      <div class="padding-lg bg-white radius-lg z-index-2 margin-minus-250 position-relative" style="box-shadow: 0px 2px 7px 2px rgba(0,0,0,0.10);">
+      <div class="padding-lg bg-white radius-lg z-index-2 margin-minus-250 position-relative"
+        style="box-shadow: 0px 2px 7px 2px rgba(0,0,0,0.10);">
         <div class="flex items-center" style="justify-content: space-between;">
           <div class="flex items-center gap-x-sm">
-          <img
-            src="https://vcblog-images.b-cdn.net/spai/q_lossless+w_48+to_webp+ret_img/https://blog.vitalconsular.com/wp-content/uploads/2021/05/icon-popular.svg"
-            alt="popular icon" class="icon icon--md">
-          <h2>Featured Offers</h2>
-        </div>
+            <img
+              src="https://vcblog-images.b-cdn.net/spai/q_lossless+w_48+to_webp+ret_img/https://blog.vitalconsular.com/wp-content/uploads/2021/05/icon-popular.svg"
+              alt="popular icon" class="icon icon--md">
+            <h2>Featured Offers</h2>
+          </div>
           <a href="/offers" class="justify-end font-semibold font-secondary">See All Offers 🡒</a>
         </div>
 
