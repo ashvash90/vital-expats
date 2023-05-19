@@ -103,6 +103,15 @@
   --sub-gap-y: var(--space-lg);
 }
 
+.gap-xl {
+  --gap-x: var(--space-xl);
+  --gap-y: var(--space-xl);
+}
+.gap-xl > * {
+  --sub-gap-x: var(--space-xl);
+  --sub-gap-y: var(--space-xl);
+}
+
 .gap-x-sm {
   --gap-x: var(--space-sm);
 }
@@ -153,13 +162,22 @@
   }
 }
 @media (min-width: 64rem) {
+  .col-3\@md {
+    --span: 3;
+  }
   .col-4\@md {
     --span: 4;
+  }
+  .col-5\@md {
+    --span: 5;
   }
   .col-6\@md {
     --span: 6;
   }
-   .col-4\@md, .col-6\@md {
+  .col-7\@md {
+    --span: 7;
+  }
+   .col-3\@md, .col-4\@md, .col-5\@md, .col-6\@md, .col-7\@md {
     flex-basis: calc((100% - (var(--grid-columns) - var(--gap-modifier, 1)) * var(--sub-gap-x)) * var(--span) / var(--grid-columns) + (var(--span) - 1) * var(--sub-gap-x));
     max-width: calc((100% - (var(--grid-columns) - var(--gap-modifier, 1)) * var(--sub-gap-x)) * var(--span) / var(--grid-columns) + (var(--span) - 1) * var(--sub-gap-x));
   }
@@ -421,6 +439,11 @@ s {
   border-radius: var(--btn-radius, 0.25em);
 }
 
+.form-label {
+  display: inline-block;
+  font-size: var(--text-sm, 0.75rem);
+}
+
 :root {
   --z-index-header: 3;
   --z-index-popover: 5;
@@ -543,12 +566,20 @@ s {
   margin-right: auto;
 }
 
+.padding-sm {
+  padding: var(--space-sm);
+}
+
 .padding-md {
   padding: var(--space-md);
 }
 
 .padding-lg {
   padding: var(--space-lg);
+}
+
+.padding-top-xl {
+  padding-top: var(--space-xl);
 }
 
 .padding-bottom-xl {
@@ -687,6 +718,12 @@ s {
   max-width: 32rem;
 }
 
+@media (min-width: 48rem) {
+  .max-width-adaptive-sm {
+    max-width: 48rem;
+  }
+}
+
 .shadow-sm {
   box-shadow: var(--shadow-sm);
 }
@@ -781,6 +818,9 @@ s {
   visibility: visible;
 }
 @media (min-width: 64rem) {
+  .text-xxl\@md {
+    font-size: var(--text-xxl, 2rem);
+  }
   .text-xxxl\@md {
     font-size: var(--text-xxxl, 2.5rem);
   }
@@ -1240,6 +1280,10 @@ body {
   color: var(--color-tertiary-30);
 }
 
+.color-tertiary-40 {
+  color: var(--color-tertiary-40);
+}
+
 .color-contrast-20 {
   color: var(--color-contrast-20);
 }
@@ -1262,6 +1306,10 @@ body {
 
 .bg-secondary-95 {
   background-color: var(--color-secondary-95);
+}
+
+.bg-tertiary-40 {
+  background-color: var(--color-tertiary-40);
 }
 
 .bg-contrast-95 {
@@ -1664,7 +1712,8 @@ a.btn:hover {
   }
 }
 
-#cb_id_CONTENT, .cb_content {
+#cb_id_CONTENT,
+.cb_content {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
